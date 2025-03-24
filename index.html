@@ -12,20 +12,31 @@
 <body style='margin: 0px; overflow: hidden;'>
 
     <!-- A-Frame Scene -->
-   <a-scene vr-mode-ui='enabled: false' arjs='sourceType: webcam; videoTexture: true; debugUIEnabled: true' renderer='antialias: true; alpha: true'>
+//   <a-scene vr-mode-ui='enabled: false' arjs='sourceType: webcam; videoTexture: true; debugUIEnabled: true' renderer='antialias: true; alpha: true'>
         
-        <!-- Asset Management -->
-        <a-assets>
-            <!-- Load model_test.glb -->
-            <a-asset-item id="model-test" src="https://raw.githubusercontent.com/LyuboslavNemtsov/aresturant.github.io/main/model_test.glb"></a-asset-item>
-        </a-assets>
+//        <!-- Asset Management -->
+//        <a-assets>
+ //           <!-- Load model_test.glb -->
+ //           <a-asset-item id="model-test" src="https://raw.githubusercontent.com/LyuboslavNemtsov/aresturant.github.io/main/model_test.glb"></a-asset-item>
+  //      </a-assets>
 
-        <!-- Custom Pattern Marker -->
-        <a-marker type="pattern" preset="custom" url="https://raw.githubusercontent.com/LyuboslavNemtsov/aresturant.github.io/main/pattern-expander.patt">
-            <!-- Display model_test.glb -->
-            <a-entity gltf-model="#model-test" position="0 0 0" scale="1 1 1"></a-entity>
-        </a-marker>
+  //      <!-- Custom Pattern Marker -->
+ //       <a-marker type="pattern" preset="custom" url="https://raw.githubusercontent.com/LyuboslavNemtsov/aresturant.github.io/main/pattern-expander.patt">
+  //          <!-- Display model_test.glb -->
+   //         <a-entity gltf-model="#model-test" position="0 0 0" scale="1 1 1"></a-entity>
+   //     </a-marker>
 
+<a-assets>
+    <a-asset-item id="model-test" src="https://github.com/LyuboslavNemtsov/aresturant.github.io/blob/main/model_test.glb"></a-asset-item>
+    <a-asset-item id="custom-marker" src="https://github.com/LyuboslavNemtsov/aresturant.github.io/blob/main/pattern-expander.patt"></a-asset-item>
+</a-assets>
+
+<a-marker type="pattern" preset="custom" url="#custom-marker">
+    <a-entity gltf-model="#model-test" position="0 0 0" scale="1 1 1"></a-entity>
+</a-marker>
+
+
+       
         <!-- AR Camera -->
         <a-entity camera></a-entity>
 
