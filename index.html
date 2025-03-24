@@ -8,11 +8,9 @@
 </head>
 <body>
     <a-scene vr-mode-ui='enabled: false' arjs='sourceType: webcam; videoTexture: true; debugUIEnabled: false' renderer='antialias: true; alpha: true'>
-        <!-- Camera for location-based AR -->
-        <a-camera gps-new-camera='gpsMinDistance: 5'></a-camera>
+      
 
-        <!-- AR Box (replace lat and lon with actual values) -->
-        <a-box color="red" gps-new-entity-place="latitude: 51.5915; longitude: 4.7735" depth="10" height="10" width="10"></a-box>
+      <script src="basic.js"></script>
     </a-scene>
 </body>
 </html>
