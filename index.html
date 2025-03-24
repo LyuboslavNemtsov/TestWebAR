@@ -6,10 +6,7 @@
     <!-- Load A-Frame and AR.js -->
     <script defer src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/gh/AR-js-org/AR.js/aframe/build/aframe-ar.min.js"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/aframe-extras@6.1.1/dist/aframe-extras.loaders.min.js"></script>
 
- <script type='text/javascript' src='https://raw.githack.com/AR-js-org/AR.js/3.4.5/three.js/build/ar-threex-location-only.js'></script>
-     <script type='text/javascript' src='https://raw.githack.com/AR-js-org/AR.js/3.4.5/aframe/build/aframe-ar.js'></script>
 </head>
 
 <body style='margin: 0px; overflow: hidden;'>
@@ -20,11 +17,11 @@
         <!-- Asset Management -->
         <a-assets>
             <!-- Load model_test.glb -->
-            <a-asset-item id="model-test" src="https://raw.githubusercontent.com/LyuboslavNemtsov/aresturant.github.io/refs/heads/main/model_test.glb"></a-asset-item>
+            <a-asset-item id="model-test" src="https://raw.githubusercontent.com/LyuboslavNemtsov/aresturant.github.io/main/model_test.glb"></a-asset-item>
         </a-assets>
 
         <!-- Custom Pattern Marker -->
-        <a-marker type="pattern" url="https://raw.githubusercontent.com/LyuboslavNemtsov/aresturant.github.io/refs/heads/main/pattern-expander.patt">
+        <a-marker type="pattern" url="https://raw.githubusercontent.com/LyuboslavNemtsov/aresturant.github.io/main/pattern-expander.patt">
             <!-- Display model_test.glb -->
             <a-entity gltf-model="#model-test" position="0 0 0" scale="1 1 1"></a-entity>
         </a-marker>
